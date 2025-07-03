@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# arahkan semua ke api_07057.php
+RewriteRule ^(.*)$ api_07057.php [QSA,L]
